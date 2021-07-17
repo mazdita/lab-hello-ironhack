@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -12,18 +14,68 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.navbar {
+  background-color:  #282c34;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5%; 
+  padding-right: 5%;
+  margin-left: 5%; 
+  margin-right: 5%;
+  margin-top: 5%;
+}
+.navbarbrand {
+  margin-top: 2%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-right: 5%;
+  margin-left: 5%; 
+  padding-left: 5%; 
+  padding-right: 40%;
+
 }
 
+button {
+  margin-top:2%;
+  margin-right: 70%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 6px;
+  border:none;
+  
+}
+
+.container {
+  display: flex;
+}
+.container >ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin-right: 5%;
+  margin-left: 1%; 
+}
+.container >ul >li {
+  align-items: center;
+  padding-left: 0%; ;
+  padding-right: 2% ;
+}
+/*.container>ul>li>title {
+  text-decoration:underline;
+}*/
+h2 {
+  text-decoration: underline;
+}
 .App-link {
   color: #61dafb;
 }
